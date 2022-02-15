@@ -12,7 +12,7 @@
 
 ## 1. Introdução
 
-O [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
+O [Protótipo1](https://en.wikipedia.org/wiki/Luhn_algorithm), também
 chamado de módulo 10, é um método de soma de verificação, usado para validar
 números de identificação, como o IMEI de telefones celulares, cartões de crédito
 etc.
@@ -36,14 +36,12 @@ Acredito que o produto atende a necessidade do usuário, quando deixa abordado o
 
 O site contém três páginas que interagem com o usuário, a primeira onde se encontra um resumo do que é a instituição e qual o seu propósito. 
 
-![gráfico do algoritmo de
-Luhn](https://image.prntscr.com/image/zBP950n2RAukBiMcsrP3Lw.png)
+![Protótipo2](https://image.prntscr.com/image/zBP950n2RAukBiMcsrP3Lw.png)
 
 A segunda página, após o usuário clicar em doar é onde se encontra a interface para efetuar a doação, no ato de doar o usuário só poderá digitar números na caixa de cartão e só poderá enviar após preencher todas as caixas, caso contrário a página o alertará para preencher todos os campos e indicará qual está vazio.
 Se caso o cartão não for válido, a página alertará que o cartão não é válido, assim como ocultará todos os dígitos do cartão, exceto os 4 últimos. 
 
-![gráfico do algoritmo de
-Luhn](https://image.prntscr.com/image/TVw3nPPeQ_GUxjDf5cDFyg.png)
+![Protótipo3](https://image.prntscr.com/image/TVw3nPPeQ_GUxjDf5cDFyg.png)
 
 
 Inserindo todos os campos e um cartão válido, será concluída a doação e direcionado para uma página de agradecimento. 
