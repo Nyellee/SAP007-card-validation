@@ -12,7 +12,7 @@
 
 ## 1. Introdução
 
-O [Protótipo1](https://en.wikipedia.org/wiki/Luhn_algorithm), também
+O [Algoritimo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
 chamado de módulo 10, é um método de soma de verificação, usado para validar
 números de identificação, como o IMEI de telefones celulares, cartões de crédito
 etc.
