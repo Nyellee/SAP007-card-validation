@@ -39,7 +39,7 @@ let validator = {
       if (i >= ((ocultarNumero.length) - 4)) {
         ocultado = ocultado + ocultarNumero.charAt(i)
       } else {
-        ocultado = ocultado + "*"
+        ocultado = ocultado + "#"
       }
     }
     return ocultado
