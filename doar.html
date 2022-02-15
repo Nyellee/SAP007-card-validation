@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <title>+Educa concluir doação</title>
@@ -6,22 +7,10 @@
 </head>
 <body>
 
-<div id="root">
+<div id="root" class="div">
   <h1 class="Fonteh1" >Concluir doação para +Educa </h1>
-
-  <div class="FonteTodos">
-    <hr><br>
-
-    <script language='JavaScript'> //Funçao para permitir somente numero
-      function SomenteNumero(e){
-        var tecla=(window.event)?event.keyCode:e.which;
-        if((tecla>47 && tecla<58)) return true;
-        else{
-          if (tecla==8 || tecla==0) return true;
-          else  return false;
-        }
-      }
-    </script>
+    <hr>
+<script src="src/OnlyNumbers.js"></script>
 
     <form id="form" action="doar.html">
 
@@ -30,44 +19,17 @@
       <input class="formDoar" id="validade" placeholder="Validade" >
       <input class="formDoar" id="cvv" placeholder="Cvv">
 
-
-      <br><br>
       <hr>
 
   <p id="span" ></p>
 
-  <center>
+    <div class="divBtn">
     <input class="buttonDoar"  id="botaoConcluir" type="button"  value="Concluir doação">
-
-    <br>
+    </div>
     </form>
 
-
-  </center>
-
-
-
 </div>
 
-  <div class="fab" ontouchstart="">
-  <button class="main" >
-  </button>
-  <ul>
-    <li>
-      <label for="opcao1">GitHub&nbsp;&nbsp;</label>
-      <button id="opcao1">
-        <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png"  width="30">
-      </button>
-    </li>
-
-    <li>
-      <label for="opcao2">Linkedin</label>
-      <button id="opcao2">
-        <img src="http://cdn.onlinewebfonts.com/svg/img_223946.png" width="30">
-      </button>
-    </li>
-  </ul>
-</div>
 
 <script src="index.js" type="module"></script>
 </body>
