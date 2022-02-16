@@ -7,13 +7,13 @@
 <<<<<<< HEAD
 - [3. Expêriencia do usuário](#3-Experiência-do-Usuário)
 - [4. Considerações finais](#4-consideracoes-finais)
-=======
+
 - [3. Expêriencia do Usuário](#3-Experiência-do-Usuário)
 - [4. Considerações finais](#4-Consideracoes-finais)
->>>>>>> 1a2f7ddd04e834d3caf55a6c3a2cdb22dd75022f
 
 
----
+
+
 
 ## 1. Introdução
 
@@ -50,12 +50,12 @@ Luhn](https://image.prntscr.com/image/zBP950n2RAukBiMcsrP3Lw.png)
 A segunda página, após o usuário clicar em doar é onde se encontra a interface para efetuar a doação, no ato de doar o usuário só poderá digitar números na caixa de cartão e só poderá enviar após preencher todas as caixas, caso contrário a página o alertará para preencher todos os campos e indicará qual está vazio.
 Se caso o cartão não for válido, a página alertará que o cartão não é válido, assim como ocultará todos os dígitos do cartão, exceto os 4 últimos. 
 
-<<<<<<< HEAD
+
 ![gráfico do algoritmo de
 Luhn](https://image.prntscr.com/image/TVw3nPPeQ_GUxjDf5cDFyg.png)
 
 ![Protótipo3](https://image.prntscr.com/image/TVw3nPPeQ_GUxjDf5cDFyg.png)
->>>>>>> 1a2f7ddd04e834d3caf55a6c3a2cdb22dd75022f
+
 
 
 Inserindo todos os campos e um cartão válido, será concluída a doação e direcionado para uma página de agradecimento. 
