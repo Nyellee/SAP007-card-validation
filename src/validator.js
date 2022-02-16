@@ -1,48 +1,44 @@
 let validator = {
-
-  validador: function (cardNumber) {
-
-    let card = Array.from(cardNumber)
-    let reverseNumber = card.reverse()
-
-    let sum = 0
+  
+  isValid: function (cardNumber) {
+    let card = Array.from(cardNumber)   
+    let reverseNumber = card.reverse()  
+    let luhnCheck = 0        
+    
     for (let i = 0; i < reverseNumber.length; i++) {
       if (i % 2 != 0) {
-        reverseNumber[i] = (Number(reverseNumber[i])) * 2
+        reverseNumber[i] = (Number(reverseNumber[i])) * 2   
         if (reverseNumber[i] > 9) {
           reverseNumber[i] = reverseNumber[i] - 9
-          sum = sum + Number(reverseNumber[i])
-        }
+          luhnCheck = luhnCheck + Number(reverseNumber[i])
+        } 
         else {
-          sum = sum + (reverseNumber[i])
+          luhnCheck = luhnCheck + (reverseNumber[i])
         }
-      }
+      } 
       else {
-        sum = sum + Number(reverseNumber[i])
+        luhnCheck = luhnCheck + Number(reverseNumber[i])
       }
     }
-    if (sum % 10 === 0) {
+    if (luhnCheck % 10 === 0) {
       return true
-
-    } else {
+    } 
+    else {
       return false
     }
   },
 
-
-  ocultar: function (ocultarNumero) {
-
-
-
-    let ocultado = ""
-    for (let i = 0; i < ocultarNumero.length; i++) {
-      if (i >= ((ocultarNumero.length) - 4)) {
-        ocultado = ocultado + ocultarNumero.charAt(i)
+  maskify: function (maskNumber) {  
+    const lastFourNumber = 4
+    let mask = ""
+        for (let i = 0; i < maskNumber.length; i++) {
+      if (i >= ((maskNumber.length) - lastFourNumber)) {
+        mask = mask + maskNumber.charAt(i)
       } else {
-        ocultado = ocultado + "#"
+        mask = mask + "#"
       }
     }
-    return ocultado
+    return mask
   }
 }
 export default validator;

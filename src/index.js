@@ -1,5 +1,6 @@
 import validator from './validator.js'
 
+
 let obterNumero = document.getElementById("numeroCartao");
 let obterNome = document.getElementById("nome");
 let obtercvv = document.getElementById("cvv");
